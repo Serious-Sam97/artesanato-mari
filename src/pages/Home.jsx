@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <div className="hero__visual">
             <div className="hero__doll-showcase">
-              <span className="hero__doll-main">🧸</span>
+              <img src="/logo.jpeg" alt="Ateliê Mari Amorim – Fios de Afeto" className="hero__doll-main" />
               <span className="hero__doll-float hero__doll-float--1">🎀</span>
               <span className="hero__doll-float hero__doll-float--2">🌸</span>
               <span className="hero__doll-float hero__doll-float--3">✨</span>
