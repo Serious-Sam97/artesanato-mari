@@ -1,0 +1,188 @@
+.doll-card {
+  background: var(--cream);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doll-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.doll-card__image {
+  background: var(--card-accent, var(--pink));
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.doll-card__emoji {
+  font-size: 5rem;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.12));
+}
+
+.doll-card__tag {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: var(--pink-accent);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.doll-card__body {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.doll-card__name {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.doll-card__desc {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ── Option rows ── */
+.doll-card__option {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.doll-card__option-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-mid);
+}
+
+.doll-card__option-value {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text-light);
+}
+
+/* Color swatches */
+.doll-card__swatches {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s, border-color 0.15s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  flex-shrink: 0;
+}
+
+.swatch:hover {
+  transform: scale(1.18);
+}
+
+.swatch--active {
+  border-color: var(--pink-accent);
+  transform: scale(1.15);
+  box-shadow: 0 0 0 3px rgba(224,124,160,0.25);
+}
+
+/* Model pills */
+.doll-card__models {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.model-btn {
+  background: var(--lavender);
+  color: var(--text-mid);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.model-btn:hover {
+  background: var(--lavender-dark);
+  color: var(--text-dark);
+}
+
+.model-btn--active {
+  background: var(--lavender-dark);
+  border-color: var(--pink-accent);
+  color: var(--text-dark);
+}
+
+/* Footer */
+.doll-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4px;
+  gap: 8px;
+}
+
+.doll-card__price {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--pink-accent);
+  flex-shrink: 0;
+}
+
+.doll-card__btn {
+  background: var(--pink);
+  color: var(--pink-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+  white-space: nowrap;
+}
+
+.doll-card__btn:hover:not(:disabled) {
+  background: var(--pink-accent);
+  color: var(--white);
+}
+
+.doll-card__btn--added {
+  background: var(--mint);
+  color: #2d7a5e;
+  pointer-events: none;
+}
+
+.doll-card__btn--disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

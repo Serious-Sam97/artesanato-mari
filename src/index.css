@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --pink: #f9d5e5;
+  --pink-dark: #f0a8c4;
+  --pink-accent: #e07ca0;
+  --lavender: #e8d5f5;
+  --lavender-dark: #c9a8e8;
+  --cream: #fff8f0;
+  --peach: #fde8d8;
+  --mint: #d4f0e8;
+  --text-dark: #4a3240;
+  --text-mid: #7a5c6e;
+  --text-light: #a88898;
+  --white: #ffffff;
+  --shadow: 0 4px 20px rgba(180, 120, 160, 0.12);
+  --shadow-hover: 0 8px 30px rgba(180, 120, 160, 0.22);
+  --radius: 16px;
+  --radius-sm: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  font-weight: 300;
+  margin-bottom: 48px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--pink-accent);
+  color: var(--white);
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(224, 124, 160, 0.3);
+}
+
+.btn-primary:hover {
+  background: #d06890;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(224, 124, 160, 0.4);
+}
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--pink-accent);
+  padding: 13px 30px;
+  border-radius: 50px;
+  border: 2px solid var(--pink-accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: var(--pink);
+  transform: translateY(-2px);
+}
