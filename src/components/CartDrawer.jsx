@@ -99,7 +99,7 @@ export default function CartDrawer() {
               </div>
 
               <Link
-                to="/contact"
+                to="/checkout"
                 className="btn-primary cart-drawer__checkout"
                 onClick={() => setIsOpen(false)}
               >

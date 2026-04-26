@@ -1,0 +1,254 @@
+.feedback {
+  padding: 80px 0;
+  background: var(--pink);
+}
+
+/* Summary */
+.feedback__summary {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.feedback__avg {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--cream);
+  padding: 16px 32px;
+  border-radius: 50px;
+  box-shadow: var(--shadow);
+}
+
+.feedback__avg-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--pink-accent);
+  line-height: 1;
+}
+
+.feedback__avg-stars {
+  font-size: 1.2rem;
+  color: #f59e0b;
+  letter-spacing: 2px;
+}
+
+.feedback__avg-count {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+/* Layout */
+.feedback__layout {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Reviews list */
+.feedback__reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 580px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.feedback__reviews::-webkit-scrollbar {
+  width: 4px;
+}
+.feedback__reviews::-webkit-scrollbar-track {
+  background: var(--pink);
+}
+.feedback__reviews::-webkit-scrollbar-thumb {
+  background: var(--pink-dark);
+  border-radius: 4px;
+}
+
+.review-card {
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  border-left: 4px solid var(--pink-accent);
+  box-shadow: var(--shadow);
+}
+
+.review-card__stars {
+  font-size: 1rem;
+  color: #f59e0b;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.review-card__text {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.review-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-card__name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--pink-accent);
+}
+
+.review-card__date {
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+/* Form */
+.feedback__form-wrap {
+  background: var(--lavender);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 90px;
+}
+
+.feedback__form-wrap h3 {
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.feedback__form-sub {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  margin-bottom: 24px;
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.feedback__field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.feedback__field label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-mid);
+}
+
+.feedback__field input,
+.feedback__field textarea {
+  border: 2px solid var(--lavender-dark);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  background: var(--cream);
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+.feedback__field input:focus,
+.feedback__field textarea:focus {
+  border-color: var(--pink-accent);
+}
+
+.feedback__field input::placeholder,
+.feedback__field textarea::placeholder {
+  color: var(--text-light);
+}
+
+/* Star selector */
+.star-selector {
+  display: flex;
+  gap: 4px;
+}
+
+.star-selector__star {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--lavender-dark);
+  cursor: pointer;
+  transition: color 0.15s, transform 0.15s;
+  padding: 0;
+  line-height: 1;
+}
+
+.star-selector__star:hover,
+.star-selector__star--lit {
+  color: #f59e0b;
+  transform: scale(1.15);
+}
+
+.feedback__error {
+  font-size: 0.82rem;
+  color: #c0392b;
+  background: #fde8e8;
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+}
+
+.feedback__submit {
+  width: 100%;
+  padding: 13px;
+}
+
+.feedback__success {
+  text-align: center;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.feedback__success span {
+  font-size: 2.8rem;
+}
+
+.feedback__success p {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .feedback__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback__form-wrap {
+    position: static;
+  }
+
+  .feedback__reviews {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback__avg {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+}

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import DollCard from '../components/DollCard'
+import FeedbackSection from '../components/FeedbackSection'
 import { featuredDolls } from '../data/dolls'
 import './Home.css'
 
@@ -96,26 +97,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="testimonials">
-        <div className="container">
-          <p className="section-subtitle">✦ O que dizem por aí ✦</p>
-          <h2 className="section-title">Palavras que aquecem</h2>
-          <div className="testimonials__grid">
-            {[
-              { name: 'Laura M.', text: 'A boneca que recebi é simplesmente de tirar o fôlego. Dá para sentir o amor em cada ponto. Minha filha não larga mais!', stars: 5 },
-              { name: 'Ana R.', text: 'A Mari nos presenteou com algo verdadeiramente único. Uma boneca personalizada da nossa filha — ela chorou de alegria quando abriu.', stars: 5 },
-              { name: 'Sofia T.', text: 'A qualidade é incrível. Pedi como presente de casamento e todo mundo perguntou onde encontrei. Com certeza vou pedir de novo!', stars: 5 },
-            ].map(({ name, text, stars }) => (
-              <div key={name} className="testimonial-card">
-                <p className="testimonial-card__stars">{'⭐'.repeat(stars)}</p>
-                <p className="testimonial-card__text">"{text}"</p>
-                <p className="testimonial-card__name">— {name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FeedbackSection />
 
       {/* CTA Banner */}
       <section className="cta-banner">
