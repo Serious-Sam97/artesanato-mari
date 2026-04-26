@@ -23,7 +23,7 @@ export default function Shop() {
       <div className="page-header">
         <div className="container">
           <span className="hero__eyebrow">✦ Coleção artesanal ✦</span>
-          <h1 className="page-header__title">Nossa Loja de Bonecas</h1>
+          <h1 className="page-header__title">Nossa Loja de Artesanatos</h1>
           <p className="page-header__sub">
             Explore a coleção completa — cada peça é única, feita com cuidado e muito carinho.
           </p>
@@ -52,7 +52,7 @@ export default function Shop() {
         </div>
 
         {filtered.length === 0 && (
-          <p className="shop__empty">Nenhuma boneca nessa categoria ainda — volte em breve!</p>
+          <p className="shop__empty">Nenhum artesanato nessa categoria ainda — volte em breve!</p>
         )}
       </div>
     </div>

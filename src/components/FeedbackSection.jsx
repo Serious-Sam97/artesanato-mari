@@ -4,8 +4,8 @@ import './FeedbackSection.css'
 const STORAGE_KEY = 'maridolls_reviews'
 
 const initialReviews = [
-  { id: 1, name: 'Laura M.', rating: 5, text: 'A boneca que recebi é simplesmente de tirar o fôlego. Dá para sentir o amor em cada ponto. Minha filha não larga mais!', date: '2025-03-12' },
-  { id: 2, name: 'Ana R.', rating: 5, text: 'A Mari nos presenteou com algo verdadeiramente único. Uma boneca personalizada da nossa filha — ela chorou de alegria quando abriu.', date: '2025-04-01' },
+  { id: 1, name: 'Laura M.', rating: 5, text: 'O artesanato que recebi é simplesmente de tirar o fôlego. Dá para sentir o amor em cada ponto. Minha filha não larga mais!', date: '2025-03-12' },
+  { id: 2, name: 'Ana R.', rating: 5, text: 'A Mari nos presenteou com algo verdadeiramente único. Um artesanato personalizado da nossa filha — ela chorou de alegria quando abriu.', date: '2025-04-01' },
   { id: 3, name: 'Sofia T.', rating: 5, text: 'A qualidade é incrível. Pedi como presente de casamento e todo mundo perguntou onde encontrei. Com certeza vou pedir de novo!', date: '2025-04-18' },
 ]
 
@@ -120,7 +120,7 @@ export default function FeedbackSection() {
           {/* Form */}
           <div className="feedback__form-wrap">
             <h3>Deixe sua avaliação</h3>
-            <p className="feedback__form-sub">Já recebeu uma boneca? Conta pra gente! 🌸</p>
+            <p className="feedback__form-sub">Já recebeu um artesanato? Conta pra gente! 🌸</p>
 
             {submitted ? (
               <div className="feedback__success">
@@ -150,7 +150,7 @@ export default function FeedbackSection() {
                   <textarea
                     name="text"
                     rows={4}
-                    placeholder="O que você achou da sua boneca?"
+                    placeholder="O que você achou do seu artesanato?"
                     value={form.text}
                     onChange={handleChange}
                   />

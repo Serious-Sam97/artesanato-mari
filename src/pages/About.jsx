@@ -3,10 +3,10 @@ import './About.css'
 
 const timeline = [
   { year: '1995', text: 'Nasceu em uma família de costureiras no sul do Brasil.' },
-  { year: '2003', text: 'Bordou sua primeira boneca aos 8 anos, guiada pelas mãos carinhosas da avó.' },
-  { year: '2015', text: 'Começou a vender bonecas artesanais em feiras de artesanato locais.' },
-  { year: '2020', text: 'Lançou a MariDolls online, levando seu trabalho para lares ao redor do mundo.' },
-  { year: 'Hoje', text: 'Cria entre 30 e 40 bonecas únicas por mês, cada uma um pequeno tesouro.' },
+  { year: '2003', text: 'Criou seu primeiro artesanato aos 8 anos, guiada pelas mãos carinhosas da avó.' },
+  { year: '2015', text: 'Começou a vender artesanatos em feiras locais.' },
+  { year: '2020', text: 'Lançou o Ateliê Mari Amorim – Fios de Afeto online, levando seu trabalho para lares ao redor do mundo.' },
+  { year: 'Hoje', text: 'Cria entre 30 e 40 artesanatos únicos por mês, cada um um pequeno tesouro.' },
 ]
 
 export default function About() {
@@ -31,7 +31,7 @@ export default function About() {
               <span>👩‍🎨</span>
             </div>
             <div className="about__quote">
-              <p>"Toda boneca merece uma alma, e eu coloco a minha em cada uma delas."</p>
+              <p>"Todo artesanato merece uma alma, e eu coloco a minha em cada um deles."</p>
               <span>— Mari</span>
             </div>
           </div>
@@ -49,9 +49,9 @@ export default function About() {
               abraçado e amado — é uma das coisas mais bonitas que uma pessoa pode fazer.
             </p>
             <p>
-              Hoje, carrego esse mesmo espírito em cada boneca que crio. Trabalho devagar e com
+              Hoje, carrego esse mesmo espírito em cada artesanato que crio. Trabalho devagar e com
               intenção. Escolho os tecidos pelo toque. Bordo rostos com expressões que parecem
-              viver. Quero que cada pessoa que receba uma das minhas bonecas sinta esse calor.
+              viver. Quero que cada pessoa que receba um dos meus artesanatos sinta esse calor.
             </p>
             <div className="about__values">
               {['Artesanato com calma e cuidado', 'Materiais sustentáveis', 'Sem produção em massa', 'Feita com atenção total'].map((v) => (
@@ -89,7 +89,7 @@ export default function About() {
               { n: '01', title: 'Escolha dos materiais', desc: 'Seleciono tecidos macios e seguros e linhas naturais — só o que parece certo nas mãos.' },
               { n: '02', title: 'Corte e modelagem', desc: 'Cada molde é cortado à mão. Nenhum padrão é usado duas vezes da mesma forma.' },
               { n: '03', title: 'Costura com cuidado', desc: 'Costurado devagar, camada por camada, verificando cada costura e curvinha.' },
-              { n: '04', title: 'Dando vida', desc: 'O rosto é bordado por último — é o momento em que a boneca vira um personagem.' },
+              { n: '04', title: 'Dando vida', desc: 'O rosto é bordado por último — é o momento em que o artesanato vira um personagem.' },
               { n: '05', title: 'Toques finais', desc: 'Vestida, acessoriada e embalada com carinho antes de ir para o novo lar.' },
             ].map(({ n, title, desc }) => (
               <div key={n} className="process__step">
@@ -105,7 +105,7 @@ export default function About() {
       {/* CTA */}
       <section className="about__cta">
         <div className="container about__cta-inner">
-          <h2>Quer uma boneca feita só para você?</h2>
+          <h2>Quer um artesanato feito só para você?</h2>
           <p>Pedidos personalizados estão sempre abertos. Vamos criar algo inesquecível juntas.</p>
           <Link to="/contact" className="btn-primary">Entre em Contato</Link>
         </div>

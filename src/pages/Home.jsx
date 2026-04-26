@@ -18,11 +18,11 @@ export default function Home() {
           <div className="hero__text">
             <span className="hero__eyebrow">Feito à mão com amor ✨</span>
             <h1 className="hero__title">
-              Bonecas que carregam um <em>pedacinho do coração</em>
+              Artesanatos que carregam um <em>pedacinho do coração</em>
             </h1>
             <p className="hero__desc">
-              Cada boneca é feita com cuidado e paciência — costurada com atenção, vestida com carinho
-              e presenteada com alma. Uma peça única criada para você ou para quem você ama.
+              Cada artesanato é feito com cuidado e paciência — costurado com atenção, vestido com carinho
+              e presenteado com alma. Uma peça única criada para você ou para quem você ama.
             </p>
             <div className="hero__actions">
               <Link to="/shop" className="btn-primary">Ver Coleção</Link>
@@ -45,8 +45,8 @@ export default function Home() {
         <div className="container values__grid">
           {[
             { icon: '🤲', title: '100% Artesanal', desc: 'Cada peça é feita à mão, sem produção em massa.' },
-            { icon: '💝', title: 'Feita com Amor', desc: 'Cada boneca carrega o carinho e a intenção de quem fez.' },
-            { icon: '🌸', title: 'Peças Únicas', desc: 'Nenhuma boneca é igual à outra — a sua é exclusiva.' },
+            { icon: '💝', title: 'Feito com Amor', desc: 'Cada artesanato carrega o carinho e a intenção de quem fez.' },
+            { icon: '🌸', title: 'Peças Únicas', desc: 'Nenhum artesanato é igual ao outro — o seu é exclusivo.' },
             { icon: '📦', title: 'Pronta para Presentear', desc: 'Embalada com cuidado e pronta para ser entregue.' },
           ].map(({ icon, title, desc }) => (
             <div key={title} className="value-item">
@@ -62,14 +62,14 @@ export default function Home() {
       <section className="featured">
         <div className="container">
           <p className="section-subtitle">✦ Selecionadas para você ✦</p>
-          <h2 className="section-title">Bonecas em Destaque</h2>
+          <h2 className="section-title">Artesanatos em Destaque</h2>
           <div className="featured__grid">
             {featuredDolls.map((doll) => (
               <DollCard key={doll.id} doll={doll} />
             ))}
           </div>
           <div className="featured__cta">
-            <Link to="/shop" className="btn-outline">Ver Todas as Bonecas</Link>
+            <Link to="/shop" className="btn-outline">Ver Todos os Artesanatos</Link>
           </div>
         </div>
       </section>
@@ -86,9 +86,9 @@ export default function Home() {
             <span className="hero__eyebrow">Conheça a criadora</span>
             <h2 className="section-title">Oi, eu sou a Mari</h2>
             <p>
-              Crio bonecas artesanais desde pequenininha, observando minha avó bordar com as mãos
+              Crio artesanatos desde pequenininha, observando minha avó bordar com as mãos
               mais delicadas do mundo. O que começou como uma tradição de família virou minha maior
-              paixão. Cada boneca que faço é uma carta de amor a essa memória.
+              paixão. Cada artesanato que faço é uma carta de amor a essa memória.
             </p>
             <Link to="/about" className="btn-primary" style={{ marginTop: '24px' }}>
               Ler Minha História
@@ -102,7 +102,7 @@ export default function Home() {
       {/* CTA Banner */}
       <section className="cta-banner">
         <div className="container cta-banner__inner">
-          <h2>Pronta para encontrar sua boneca perfeita?</h2>
+          <h2>Pronta para encontrar seu artesanato perfeito?</h2>
           <p>Pedidos personalizados são sempre bem-vindos — me conta sua ideia e eu dou vida a ela.</p>
           <Link to="/contact" className="btn-primary">Fazer um Pedido Personalizado</Link>
         </div>

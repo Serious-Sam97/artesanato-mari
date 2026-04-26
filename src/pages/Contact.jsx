@@ -31,9 +31,9 @@ export default function Contact() {
         {/* Info cards */}
         <div className="contact__info-grid">
           {[
-            { icon: '📩', title: 'E-mail', value: 'mari@maridolls.com' },
-            { icon: '📸', title: 'Instagram', value: '@mari.dolls' },
-            { icon: '🕐', title: 'Tempo de resposta', value: 'Em até 48 horas' },
+            { icon: '📩', title: 'E-mail', value: 'marianesamorim@outlook.com' },
+            { icon: '📱', title: 'Telefone / WhatsApp', value: '(11) 98458-5859' },
+            { icon: '📸', title: 'Instagram', value: '@fiosdeafeto.by.mari' },
           ].map(({ icon, title, value }) => (
             <div key={title} className="contact__info-card">
               <span className="contact__info-icon">{icon}</span>

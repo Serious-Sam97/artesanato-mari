@@ -17,20 +17,13 @@
 .navbar__brand {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  color: var(--text-dark);
-  font-weight: 700;
 }
 
-.navbar__brand em {
-  color: var(--pink-accent);
-  font-style: italic;
-}
-
-.navbar__brand-icon {
-  font-size: 1.4rem;
+.navbar__logo {
+  height: 68px;
+  width: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
 .navbar__nav {

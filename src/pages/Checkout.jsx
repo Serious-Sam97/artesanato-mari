@@ -3,8 +3,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import './Checkout.css'
 
-const PIX_KEY = 'mari@maridolls.com'
-const BENEFICIARY = 'Mariana Oliveira'
+const PIX_KEY = 'marianesamorim@outlook.com'
+const BENEFICIARY = 'Mari Amorim'
 const BANK = 'Nubank'
 
 export default function Checkout() {
@@ -33,7 +33,7 @@ export default function Checkout() {
         <div className="container checkout__empty-inner">
           <span>🛒</span>
           <h2>Seu carrinho está vazio</h2>
-          <p>Adicione bonecas ao carrinho antes de finalizar o pedido.</p>
+          <p>Adicione artesanatos ao carrinho antes de finalizar o pedido.</p>
           <Link to="/shop" className="btn-primary">Ver Coleção</Link>
         </div>
       </div>
@@ -48,10 +48,11 @@ export default function Checkout() {
           <h1>Pedido confirmado!</h1>
           <p>
             Obrigada pelo seu pedido! Assim que o pagamento PIX for identificado,
-            a Mari entrará em contato para confirmar os detalhes da sua boneca.
+            a Mari entrará em contato para confirmar os detalhes do seu artesanato.
           </p>
           <div className="checkout__confirmed-info">
-            <span>📩 mari@maridolls.com</span>
+            <span>📩 marianesamorim@outlook.com</span>
+            <span>📱 (11) 98458-5859</span>
             <span>⏱ Prazo de resposta: até 48 horas</span>
           </div>
           <Link to="/" className="btn-primary">Voltar para o início</Link>

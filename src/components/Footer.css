@@ -11,18 +11,15 @@
   padding: 64px 24px 48px;
 }
 
-.footer__logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  color: var(--pink);
-  font-weight: 700;
+.footer__logo-img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
   display: block;
   margin-bottom: 12px;
-}
-
-.footer__logo em {
-  color: var(--pink-dark);
-  font-style: italic;
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 6px 10px;
 }
 
 .footer__brand p {

@@ -19,8 +19,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar__inner container">
         <Link to="/" className="navbar__brand">
-          <span className="navbar__brand-icon">🎀</span>
-          <span className="navbar__brand-text">Mari<em>Dolls</em></span>
+          <img src="/logo.jpeg" alt="Ateliê Mari Amorim – Fios de Afeto" className="navbar__logo" />
         </Link>
 
         <nav className={`navbar__nav ${menuOpen ? 'navbar__nav--open' : ''}`}>
